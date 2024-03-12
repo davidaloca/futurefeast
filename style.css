@@ -58,7 +58,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover{
-    border-bottom: 2px solid white;
+    font-size: 19px;
+    color: orange;
 }
 
 .video{
@@ -71,6 +72,14 @@ header nav ul li a:hover{
     background-color: gray;
 }
 
+.classtextur {
+    font-size: 14px;
+    color: rgb(64, 63, 63);
+    max-width: ;
+    text-overflow: ellipsis;
+    flex-direction: column;
+    background-color: gray;
+}
 
 /* Content */
 
@@ -112,6 +121,7 @@ header nav ul li a:hover{
     color: white;
 }
 
+
 .liebenberg-img {
     width: 400px;
     height: 250px;
@@ -120,5 +130,5 @@ header nav ul li a:hover{
 .excel{
     position: relative;
     padding-top: 5%;
-    padding-left: 26%;
-}
+    padding-left: 1%;
+};
