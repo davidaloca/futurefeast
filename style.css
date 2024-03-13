@@ -72,16 +72,21 @@ header nav ul li a:hover{
     background-color: gray;
 }
 
-.classtextur {
-    font-size: 14px;
-    color: rgb(64, 63, 63);
-    max-width: ;
-    text-overflow: ellipsis;
-    flex-direction: column;
-    background-color: gray;
+.textur {
+    background-color: #6e6e6e;
+    padding: 50px 50px;
+    position: absolute;
 }
 
 /* Content */
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
 
 .content {
     display: flex;
@@ -121,6 +126,21 @@ header nav ul li a:hover{
     color: white;
 }
 
+/* Menu */
+
+.menu-content {
+    position: fixed;
+}
+
+.menu-header h3 {
+    color: orange;
+    padding: 100px 30px;
+}
+
+.menu-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
 
 .liebenberg-img {
     width: 400px;
@@ -132,3 +152,10 @@ header nav ul li a:hover{
     padding-top: 5%;
     padding-left: 1%;
 };
+
+.feastcontent{
+    background-color: #3a3939;
+    display: flex;
+    
+    position: absolute;
+}
