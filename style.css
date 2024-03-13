@@ -59,7 +59,7 @@ header nav ul li a {
 
 header nav ul li a:hover{
     font-size: 19px;
-    color: orange;
+    color: rgb(46, 238, 8);
 }
 
 .video{
@@ -113,7 +113,8 @@ header nav ul li a:hover{
     justify-content: center;
     text-align: center;
     padding-top: 10%;
-    background-color: darkorange;
+    background-color: rgb(67, 159, 2);
+    ;
     color: gray;
 }
 
@@ -155,9 +156,18 @@ header nav ul li a:hover{
 };
 
 .feastcontent {
-    background-color: #3a3939;
+    background-color: #656565;
     background-image: (to top, rgba(31, 31, 31, 0), rgba(31, 31, 31, 0.9));
     display: flex;
     padding-top: 20%;
     position: absolute;
+}
+
+.impressum {
+    font-size: 14px;
+    color: black;
+    padding: 20px 20px;
+    padding-bottom: 20%;
+    position: fixed;
+    background-color: #000;
 }
