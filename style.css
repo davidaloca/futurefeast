@@ -155,6 +155,7 @@ header nav ul li a:hover{
 
 .feastcontent {
     background-color: #3a3939;
+    background-image: (to top, rgba(31, 31, 31, 0), rgba(31, 31, 31, 0.9));
     display: flex;
     padding-top: 20%;
     position: absolute;
