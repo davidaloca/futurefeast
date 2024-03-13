@@ -74,7 +74,8 @@ header nav ul li a:hover{
 
 .textur {
     background-color: #6e6e6e;
-    padding: 50px 50px;
+    padding: 300px 300px;
+    padding-top: 5%;
     position: absolute;
 }
 
