@@ -153,9 +153,9 @@ header nav ul li a:hover{
     padding-left: 1%;
 };
 
-.feastcontent{
+.feastcontent {
     background-color: #3a3939;
     display: flex;
-    
+    padding-top: 20%;
     position: absolute;
 }
