@@ -164,10 +164,10 @@ header nav ul li a:hover{
 }
 
 .impressum{
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     padding: 100px 100px;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     position: fixed;
     background-color: #000;
 }
