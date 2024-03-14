@@ -73,7 +73,7 @@ header nav ul li a:hover{
 }
 
 .textur {
-    background-color: #6e6e6e;
+    background-color: #c6c5c5;
     padding: 300px 300px;
     padding-top: 5%;
     position: absolute;
@@ -86,7 +86,7 @@ header nav ul li a:hover{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #000;
+    background-color: #000000;
 }
 
 .content {
@@ -98,7 +98,7 @@ header nav ul li a:hover{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to top, rgba(31, 31, 31, 0), rgba(31, 31, 31, 0.9)), url("img/bg5.png");
+    background-image: linear-gradient(to top, rgba(31, 31, 31, 0), rgba(31, 31, 31, 0.2)), url("img/bg5.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,8 +112,8 @@ header nav ul li a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 10%;
-    background-color: rgb(67, 159, 2);
+    padding-top: 100px;
+    background-color: rgb(58, 108, 22);
     ;
     color: gray;
 }
@@ -163,10 +163,10 @@ header nav ul li a:hover{
     position: absolute;
 }
 
-.impressum {
+.impressum{
     font-size: 14px;
     color: black;
-    padding: 20px 20px;
+    padding: 100px 100px;
     padding-bottom: 20%;
     position: fixed;
     background-color: #000;
