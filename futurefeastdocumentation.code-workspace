@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "futurefeastdocumentation",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "futurefeastdocumentation"
+	}
+}
