@@ -98,7 +98,9 @@ header nav ul li a:hover{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to top, rgba(31, 31, 31, 0), rgba(31, 31, 31, 0.2)), url("img/bg5.png");
+    background-image: linear-gradient(to top, rgba(31, 31, 31, 0),
+     rgba(31, 31, 31, 0.2)),
+      url("img/bg5.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
