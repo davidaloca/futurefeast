@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warenkorb</title>
+ 
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+</head>
+<body>
+<div id="app" class="container" style="width: 500px; margin-top: 20px;">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Produkt</th>
+                <th>Anzahl</th>
+                <th>Einzelpreis</th>
+                <th>Gesamtpreis</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="(item, index) in warenkorb">
+                <td>{{ item.name }}</td>
+                <td><input type="number" min="0"  step="1" class="form-control" v-model="item.menge"></td>
+                <td class="text-right">{{ item.preis.toLocaleString('de-DE', {minimumFractionDigits: 2}) }}</td>
+                <td class="text-right">{{ (item.menge * item.preis).toLocaleString('de-DE', {minimumFractionDigits: 2}) }}</td>
+                <td><button @click="deleteItem(index)">Löschen</button></td>
+            </tr>
+            <tr>
+                <th colspan="3">Gesamtpreis</th>
+                <td class="text-right">{{ gesamtpreis.toLocaleString('de-DE',{minimumFractionDigits: 2}) }}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+ 
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            warenkorb: [
+                {name: 'Coffee', menge: 0, preis: 3.00},
+                {name: 'Café Crema', menge: 0, preis: 3.50},
+                {name: 'Flat White', menge: 0, preis: 3.50},
+                {name: 'Cappuchino', menge: 0, preis: 4.50},
+                {name: 'Latte Machiato', menge: 0, preis: 5.00},
+                {name: 'Espresso', menge: 0, preis: 2.50},
+                {name: 'Heiße Schokolade', menge: 0, preis: 4.50},
+                ]
+        },
+        computed: {
+            gesamtpreis: function() {
+                return this.warenkorb.reduce((acc, curr) => acc + curr.menge*curr.preis, 0);
+            }
+        },
+        methods: {
+            deleteItem(index) {
+                this.warenkorb.splice(index, 1);
+            }
+        }
+ 
+    })
+</script>
+ 
+</body>
+</html>
