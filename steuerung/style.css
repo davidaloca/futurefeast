@@ -1,21 +1,7 @@
-.oben{
-    padding-top: 5%;
+.up{
+    padding-top: 4%;
 }
 
-.left{
-    padding-left: 40%;
-    border-top: 30cap;
-}
-
-.unten {
-    padding-top: 10%;
-}
-
-.right {
-    padding-left: 54%;
-    padding-bottom: 30%;
-}
-
-.pfeile{
+.links{
     padding-top: 20%;
 }
